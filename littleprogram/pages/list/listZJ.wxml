@@ -1,0 +1,19 @@
+<template name="list_Item">
+<view class="item_h">
+    <image class='img_ld' mode="{{mode}}" src="{{src}}"></image>
+    <view class="item_lign">
+        <view class="item_v item_font">
+            <text>{{tit}}</text>
+            <text>mode:{{mode}}</text>
+        </view>
+        <view class="list_item_bottom">
+            <view class="price">
+                <text style="font-size:14pt;margin-top:8px;">¥</text><text>10.0</text>
+            </view>
+            <view class="buyButton">
+                <button type="primary" plain="true" size="mini">购买</button>
+            </view>
+        </view>
+    </view>
+</view>
+</template>

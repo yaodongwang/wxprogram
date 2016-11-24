@@ -1,0 +1,47 @@
+<import src="listZJ.wxml"/>
+<view id="aaa" class="item" wx:for="{{array}}" wx:for-index="ind" wx:for-item="item">
+<template is="list_Item" data="{{tit: item.tit,src:item.src,mode:item.mode}}"/>
+</view>
+<button id="bb" bindtap="addList">Add</button>
+
+<view class="dp_f">
+    <view class="fg1" style="">
+        <view class="list_item" wx:for="{{array}}" wx:for-index="ind" wx:for-item="item">
+            <view class="list_img">
+                <image class='list_img_ld' src="{{item.src}}"></image>
+            </view>
+            <view class="item_v item_font">
+                <text class="list_title">{{item.tit}}</text>
+                <text>mode:{{item.mode}}</text>
+            </view>
+            <view class="list_item_bottom">
+                <view class="price">
+                    <text>10.0</text>
+                </view>
+                <view class="buyButton">
+                    <button type="primary" plain="true" size="mini">购买</button>
+                </view>
+            </view>
+        </view>
+        
+    </view>
+    <view class="fg1" style="">
+        <view class="list_item" wx:for="{{array}}" wx:for-index="ind" wx:for-item="item">
+            <view class="list_img">
+                <image class='list_img_ld' src="{{item.src}}"></image>
+            </view>
+            <view class="item_v item_font">
+                <text class="list_title">测试</text>
+                <text>mode:{{item.mode}}</text>
+            </view>
+            <view class="list_item_bottom">
+                <view class="price">
+                    <text>10.0</text>
+                </view>
+                <view class="buyButton">
+                    <button type="primary" plain="true" size="mini">购买</button>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,32 @@
+<scroll-view scroll-y="true" scroll-into-view="answer">
+<view class="box">
+    <view class="ans_robot">
+        <view wx:if="{{isNoRequir}}" wx:for="{{requData}}" wx:for-index="indx"  wx:for-item="item">
+                <view wx:if="{{item.isMe}}" id="{{indx}}">
+                    <template is="item_right" data="{{text: item.text,img:userInfo.avatarUrl}}"/>
+                </view>
+                <view wx:if="{{item.isMe == false}}" id="{{indx}}">
+                    <template is="item_left" data="{{text: item.text}}"/>
+                </view>
+        </view>
+    </view>
+</view>
+</scroll-view>
+<view class="inp_bottom">
+    <input class="send_input" value="{{inputval}}" bindfocus="onfocus" bindblur="inputdata" placeholder="说话"></input>
+    <button class="send_but" type="primary" size="mini" bindtap="opentuling" >发送</button>
+</view>
+
+
+<template name="item_left">
+    <view id="answer" class="answer">
+        <image class="heagImg" src="../images/headimg.jpg"></image>
+        <text class="left_text text">{{text}}</text>
+    </view>
+</template>
+<template name="item_right">
+    <view class="me">
+        <text class="right_text text">{{text}}</text>
+        <image class="heagImg" src="{{img}}" background-size="cover"></image>
+    </view>
+</template>

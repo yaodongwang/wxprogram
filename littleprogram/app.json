@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/talk/talk", 
+    "pages/list/index",
+    "pages/picker/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "演示",
+    "navigationBarBackgroundColor": "#fbf9fe",
+    "backgroundColor": "#fbf9fe"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "#888",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "pages/images/icon_component.png",
+      "selectedIconPath": "pages/images/icon_component_HL.png",
+      "text": "我"
+    }, {
+      "pagePath": "pages/list/index",
+      "iconPath": "pages/images/icon_API.png",
+      "selectedIconPath": "pages/images/icon_API_HL.png",
+      "text": "列表"
+    }, {
+      "pagePath": "pages/talk/talk",
+      "iconPath": "pages/images/wechat.png",
+      "selectedIconPath": "pages/images/wechatHL.png",
+      "text": "聊天"
+    }]
+  }
+}

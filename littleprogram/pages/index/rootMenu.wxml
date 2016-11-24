@@ -1,0 +1,5 @@
+<template name="root222">
+  <view>
+    外部引入模板
+  </view>
+</template>
