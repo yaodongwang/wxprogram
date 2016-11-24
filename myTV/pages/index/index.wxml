@@ -1,0 +1,75 @@
+<view>
+    <!--导航条-->
+    <view class="scroll">
+        <scroll-view scroll-x="true" style="width: 100%">
+            <view class="scroll_item" wx:for="{{head_tit}}" wx:item="item">
+                <view catchtap="clickTitle" id="{{item.id}}">{{item.name}}</view>
+            </view>
+        </scroll-view>
+    </view>
+    <!--轮播图-->
+    <view >
+        <swiper autoplay="true" class="swiper_tit" indicator-dots="true">
+            <block wx:for="{{swipt}}" wx:item="item">
+                <swiper-item>
+                    <view class="pic">
+                        <image class="swiper_img" mode="aspectFit" src="{{item.img}}"/>
+                    </view>
+                    <view class="title">
+                        <text>{{item.title}}</text>
+                    </view>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <!--新闻轮播图-->
+    <view>
+        <swiper vertical="true" autoplay="true"  style="height:40px">
+            <block wx:for="{{news}}">
+                <swiper-item>
+                    <view class="swiper_news">
+                        <view class="news_img_view">
+                            <image class="news_Img" src="{{item.img}}"></image>
+                        </view>
+                        <view class="news_title">
+                            <text>{{item.title}}</text>
+                        </view>
+                    </view>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <!--头条要闻-->
+    
+    <view class="tit" style="display:flex"><view class="tit_img"></view>头条要闻</view>
+    <view class="toutiao">
+        <view wx:for="{{toutiao}}">
+            <template is="moxing" data="{{img:item.img,tit:item.title,info:item.info}}"></template>
+        </view>
+    </view>
+    <view class="tit" style="display:flex"><view class="tit_img"></view>今日热门</view>   
+     <view class="hot_list">
+        <block wx:for="{{hot}}">
+            <template is="moxing" data="{{img:item.img,tit:item.title,info:item.info}}"></template>
+        </block>
+    </view>
+    <view class="tit" style="display:flex"><view class="tit_img"></view>全网首播</view>  
+    <view class="hot_list">
+        <block wx:for="{{firstShow}}">
+            <template is="moxing" data="{{img:item.img,tit:item.title,info:item.info}}"></template>
+        </block>
+    </view>
+</view>
+
+<template name="moxing">
+    <view class="temp">
+        <view><image class="temp_img" base="aspectFit" src="{{img}}"></image></view>
+        <view class="temp_text">{{tit}}</view>
+        <view class="temp_info">{{info}}</view>
+    </view>
+    
+</template>
+
+<template name="test">
+    <view>test</view>
+</template>

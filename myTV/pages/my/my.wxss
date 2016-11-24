@@ -1,0 +1,104 @@
+.flex{
+    display: flex;
+}
+.flex_ar{
+    justify-content:space-around;
+}
+.bg-white{
+    background-color: #fff;
+}
+.mar1{
+    margin: 10px;
+}
+.mar-t{
+    margin-top: 10px;
+}
+.mar-tb{
+    margin: 8px 0 8px 0;
+}
+.pad-b{
+    padding-bottom: 10px;
+}
+.f1{
+    flex: 1;
+}
+.f2{
+    flex: 2;
+}
+.f3{
+    flex: 3;
+}
+.f5{
+    flex: 5;
+}
+.headimg{
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50px;
+}
+.tx-l{
+    text-align: left;
+}
+.tx-r{
+    text-align: right;
+}
+.tx-c{
+    text-align: center;
+}
+.hc{
+    display: flex;
+    align-items: center;
+}
+.v{
+    display: flex;
+    flex-direction: column;
+}
+.vc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.hc-e{
+    justify-content: flex-end;
+}
+.ic-right{
+    height: 40rpx;
+    width: 40rpx;
+    margin-right: 20rpx;
+}
+.vipBut{
+    margin: 0rpx;
+    margin-top: 5px;
+    height: 50rpx;
+}
+.ubb{
+    border-bottom: 1rpx solid #c8c8cd;
+}
+.uba{
+    border:  1rpx solid #c8c8cd;
+}
+.bor-radius{
+    border-radius: 5px;
+    padding: 2px;
+}
+.font-tit2{
+    font-size: 10pt;
+}
+.font-tit3{
+    font-size: 12pt;
+}
+.font-gray{
+    color:#808080;
+}
+.tc{
+    text-align:center;
+}
+.tc image{
+    height: 40px;
+    width:40px;
+}
+.tit3-img{
+    width:20px;
+    height: 20px;
+}

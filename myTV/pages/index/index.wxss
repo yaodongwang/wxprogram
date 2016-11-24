@@ -1,0 +1,108 @@
+.scroll {
+  white-space: nowrap;
+  background-color: #2b2e33;
+}
+
+.scroll_item {
+  display: inline-block;
+  color: #888;
+  margin: 10px;
+  font-size: 16px;
+}
+
+.swiper_tit {
+  width: 100%;
+  height: 170px;
+}
+
+.swiper_img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px;
+  width: 100%;
+}
+
+.pic {
+  position: absolute;
+  left: 0;
+  top: -32px;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper_news {
+  display: flex;
+  align-items: center;
+}
+
+.news_Img {
+  height: 40px;
+  width: 40px;
+}
+
+.news_img_view {
+  padding-left: 10px;
+}
+
+.news_title {
+  font-size: 10pt;
+}
+
+.temp {
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+.temp_img {
+  height: 100px;
+  width: 170px;
+  border-radius: 4px;
+}
+
+.temp_text {
+  font-size: 10pt;
+}
+
+.temp_info {
+  font-size: 8pt;
+  margin-top: 2px;
+  color: #888;
+}
+
+.toutiao {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #b2b2b2;
+}
+
+.tit {
+  margin: 10px;
+  font-size: 10pt;
+}
+
+.tit_img {
+  width: 4px;
+  margin-right: 5px;
+  background-color: #f06000;
+  border-radius: 10px;
+}
+
+.hot_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #b2b2b2;
+}

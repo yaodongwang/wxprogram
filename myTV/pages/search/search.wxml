@@ -1,0 +1,50 @@
+<view class="search">
+    <input class="search_input" placeholder="搜索视频"></input>
+</view>
+
+<!--综艺热搜-->
+<view class="tit" style="display:flex"><view class="tit_img"></view>综艺热搜</view>
+<scroll-view class="scroll" scroll-x="true">
+    <view class="scroll_item" wx:for="{{list}}">
+        <template is="temp" data="{{img:item.img,tit:item.title}}"></template>
+    </view>
+</scroll-view>
+
+<!--电视剧-->
+<view class="tit" style="display:flex"><view class="tit_img"></view>电视剧热榜</view>
+<view style="display: flex;">
+    <view style="flex:1">
+        <view style="position:relative">
+            <view class="">
+                <image class="img" src="{{dsjimg.img}}"></image>
+            </view>
+            <view class="temp_txt" style="display:flex;flex-direction: column;">
+                <text class="imgtxt">{{dsjimg.title}}</text>
+                <text class="imgtxt" style="font-size:8pt;">{{dsjimg.info}}</text>
+            </view>
+        </view>
+    </view>
+    <view style="flex:1;" class=" mar-a">
+        <view  wx:for="{{dsjListList}}" wx:for-index="idx">
+            <view class="h">
+                <view class="h hc mar-lr font_g">{{idx+2}}</view>
+                <view class="v mar-l font-12 mar-a">
+                    <text>{{item.title}}</text>
+                    <text class="font_g font-info">{{item.info}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+
+<!--综艺热搜模型-->
+<template name="temp">
+    <view style="position:relative">
+        <view class="">
+            <image class="img" src="{{img}}"></image>
+        </view>
+        <view class="temp_txt" style="">
+            <text class="imgtxt">{{tit}}</text>
+        </view>
+    </view>
+</template>

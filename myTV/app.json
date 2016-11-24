@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/my/my",
+    "pages/index/index",
+    
+    "pages/search/search",
+    "pages/wpqd/wpqd",
+    "pages/cache/cache",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#2b2e33",
+    "navigationBarTitleText": "myTV",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "#dark"
+  },
+  "tabBar": {
+    "color": "#74777e",
+    "selectedColor": "#f06000",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "精选",
+      "iconPath": "images/jx.png",
+      "selectedIconPath": "images/jxselect.png"
+    },{
+      "pagePath": "pages/search/search",
+      "text": "搜索",
+      "iconPath": "images/ss.png",
+      "selectedIconPath": "images/ssselect.png"
+    },{
+      "pagePath": "pages/wpqd/wpqd",
+      "text": "王牌强档",
+      "iconPath": "images/wp.png",
+      "selectedIconPath": "images/wpselect.png"
+    },{
+      "pagePath": "pages/cache/cache",
+      "text": "缓存",
+      "iconPath": "images/hc.png",
+      "selectedIconPath": "images/hcselect.png"
+    },{
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "images/my.png",
+      "selectedIconPath": "images/myselect.png"
+    }]
+  }
+}

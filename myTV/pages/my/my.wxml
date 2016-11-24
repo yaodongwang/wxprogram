@@ -1,0 +1,44 @@
+<view class="bg-white ubb">
+  <view class="flex mar1 ubb pad-b">
+    <view class="f1">
+      <image class="headimg" src="{{userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="f3 tx-l vc">
+      <font>{{userInfo.nickName}}</font>
+      <view class="uba font-tit2 mar-5 bor-radius font-gray">开通会员</view>
+    </view>
+    <view class=" f1 hc tx-r hc-e">
+      <image class="ic-right" src="/images/right-gray.png"></image>
+    </view>
+  </view>
+  <view class="flex mar1 flex_ar">
+    <view wx:for="{{tit2}}">
+      <view>
+        <view class="tc">
+          <image src="{{item.ioc}}"></image>
+        </view>
+        <font class="font-tit2">{{item.name}}</font>
+      </view>
+    </view>
+  </view>
+</view>
+<scroll-view scroll-y="true" style="height:780rpx;">
+  <view wx:for="{{tit3}}">
+    <view class="bg-white uba mar-tb">
+      <template is="aaa" data="{{tit:item.tit,ioc:item.ioc}}"></template>
+    </view>
+  </view>
+</scroll-view>
+<template name="aaa">
+  <view class="flex mar-t">
+    <view class="f1 tx-c">
+      <image class="tit3-img" src="{{ioc}}"></image>
+    </view>
+    <view class="f5 font-tit3">
+      <font>{{tit}}</font>
+    </view>
+    <view class="f1 tx-r">
+      <image class="ic-right" src="/images/right-gray.png"></image>
+    </view>
+  </view>
+</template>
