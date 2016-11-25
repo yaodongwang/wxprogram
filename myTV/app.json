@@ -1,11 +1,10 @@
 {
   "pages":[
+    "pages/cache/cache",
     "pages/my/my",
     "pages/index/index",
-    
     "pages/search/search",
     "pages/wpqd/wpqd",
-    "pages/cache/cache",
     "pages/logs/logs"
   ],
   "window":{

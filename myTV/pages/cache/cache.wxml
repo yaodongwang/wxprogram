@@ -1,0 +1,6 @@
+<view class="df">
+    <view class="hc f1 mrt " wx:for="{{listdata}}" wx:for-index="indx" bindtap="change">
+        <view id="{{indx}}" class="{{chodata == indx ? 'font-green':''}}">{{item}}</view>
+    </view>
+    <view  style="left:{{left}} ;transform: translateX({{sliderOffset}}px);" class="underLine "></view>
+</view>
