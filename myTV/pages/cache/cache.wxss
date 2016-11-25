@@ -1,1 +1,4 @@
-@import "/style/style.wxss"
+@import "/style/style.wxss";
+.asd{
+    background-image: url("/images/jx.png");
+}

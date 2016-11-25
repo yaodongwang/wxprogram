@@ -1,6 +1,11 @@
-<view class="df">
-    <view class="hc f1 mrt " wx:for="{{listdata}}" wx:for-index="indx" bindtap="change">
-        <view id="{{indx}}" class="{{chodata == indx ? 'font-green':''}}">{{item}}</view>
+<view>
+    <view class="df mrt">
+        <block wx:for="{{listdata}}" wx:for-index="indx">
+            <view id="{{indx}}" class=" f1 hc {{chodata == indx ? 'font-green':''}}" bindtap="change">{{item}}</view>
+        </block>
     </view>
     <view  style="left:{{left}} ;transform: translateX({{sliderOffset}}px);" class="underLine "></view>
 </view>
+<!--<view class="mrt">
+    <button bindtap="opensheet">action-sheet</button>
+</view>-->
