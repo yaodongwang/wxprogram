@@ -16,6 +16,19 @@ function formatNumber(n) {
   return n[1] ? n : '0' + n
 }
 
+function imageUtil(){
+  let whSize;
+  wx.getSystemInfo({
+    success: function(res) {
+      let winHeight = res.windowHeight;
+      let winwidth = res.windowWidth;
+      whSize = {wid:winwidth,hei:winHeight};
+    }
+  })
+  return whSize;
+}
+
 module.exports = {
-  formatTime: formatTime
+  imageUtil:imageUtil,
+  formatTime: formatTime,
 }

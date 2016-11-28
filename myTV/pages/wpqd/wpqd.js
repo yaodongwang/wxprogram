@@ -1,5 +1,8 @@
+var utilImg = require("../../utils/util.js");
 Page({
   data:{
+    imgWid:0,
+    left:0,
     list:[
         {img:"http://1img.mgtv.com/preview/cms_icon/2016/11/20161116183027805.jpg",title:"相爱穿梭千年2",info:"每周三四24:00 芒果TV全网独播"},
         {img:"http://2img.mgtv.com/preview/cms_icon/2016/11/20161111200849822.jpg",title:"爸爸去哪儿 第四季",info:"周五20点会员先看 24点免费看"},
@@ -21,6 +24,13 @@ Page({
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
+    let whSize = utilImg.imageUtil();//屏幕的宽
+    console.log(whSize);
+    this.setData({
+      imghei:whSize.hei,
+      imgwid:whSize.wid,
+      left:whSize.wid,
+    })
   },
   change:function(e){
     let index = e.detail.current;

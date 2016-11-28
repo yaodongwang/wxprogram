@@ -1,15 +1,17 @@
 <view class="bg_img">
-    <image class="bgimg" src="{{bgimg}}" mode=""></image>
+    <image class="bgimg" style="height:{{imghei}}px;width:{{imgwid}}px" src="{{bgimg}}" mode=""></image>
 </view>
 
 <view class="body">
-    <swiper autoplay="true" class="swiper" bindchange="change">
+    <swiper autoplay="true" class="swiper" style="height:{{imghei*1.5}}rpx" bindchange="change">
         <block wx:for="{{list}}">
             <swiper-item>
                 <image class="img" mode="aspectFit" src="{{item.img}}"></image>
-                <view class="message">
-                    <text class="swip_tit">{{item.title}}</text>
-                    <text class="swip_tit2">{{item.info}}</text>
+                <view class="tit">
+                    <view class="message" style="width:{{imgwid*1.5}}rpx">
+                        <text class="swip_tit">{{item.title}}</text>
+                        <text class="swip_tit2">{{item.info}}</text>
+                    </view>
                 </view>
             </swiper-item>
         </block>

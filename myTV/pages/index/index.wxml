@@ -24,7 +24,7 @@
     </view>
     <!--新闻轮播图-->
     <view>
-        <swiper vertical="true" autoplay="true"  style="height:40px">
+        <swiper vertical="true" autoplay="true" style="height:40px;">
             <block wx:for="{{news}}">
                 <swiper-item>
                     <view class="swiper_news">
@@ -44,32 +44,27 @@
     <view class="tit" style="display:flex"><view class="tit_img"></view>头条要闻</view>
     <view class="toutiao">
         <view wx:for="{{toutiao}}">
-            <template is="moxing" data="{{img:item.img,tit:item.title,info:item.info}}"></template>
+            <template is="moxing" data="{{img:item.img,tit:item.title,info:item.info,imgwh:img_width}}"></template>
         </view>
     </view>
     <view class="tit" style="display:flex"><view class="tit_img"></view>今日热门</view>   
      <view class="hot_list">
         <block wx:for="{{hot}}">
-            <template is="moxing" data="{{img:item.img,tit:item.title,info:item.info}}"></template>
+            <template is="moxing" data="{{img:item.img,tit:item.title,info:item.info,imgwh:img_width}}"></template>
         </block>
     </view>
     <view class="tit" style="display:flex"><view class="tit_img"></view>全网首播</view>  
     <view class="hot_list">
         <block wx:for="{{firstShow}}">
-            <template is="moxing" data="{{img:item.img,tit:item.title,info:item.info}}"></template>
+            <template is="moxing" data="{{img:item.img,tit:item.title,info:item.info,imgwh:img_width}}"></template>
         </block>
     </view>
 </view>
 
 <template name="moxing">
     <view class="temp">
-        <view><image class="temp_img" base="aspectFit" src="{{img}}"></image></view>
+        <view><image class="temp_img" style="width:{{imgwh.wid}}rpx;height:{{imgwh.hei}}rpx" base="aspectFit" src="{{img}}"></image></view>
         <view class="temp_text">{{tit}}</view>
         <view class="temp_info">{{info}}</view>
     </view>
-    
-</template>
-
-<template name="test">
-    <view>test</view>
 </template>

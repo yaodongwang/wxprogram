@@ -1,5 +1,8 @@
+var utilImg = require("../../utils/util.js");
+var img_width = 0;
 Page({
   data: {
+    img_width : 0,
     head_tit: [
       { name: '精选', id: '1001' }, { name: '黄金单身汉', id: '1032' },
       { name: '综艺', id: '1003' }, { name: '电视剧', id: '1004' },
@@ -38,6 +41,11 @@ Page({
   },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
+    
+    let whSize = utilImg.imageUtil().wid;//屏幕的宽
+    this.setData({
+      img_width : {'wid':whSize-60,'hei':200},
+    })
   },
   clickTitle: function (e) {
     let id = e.currentTarget.id;
@@ -47,5 +55,6 @@ Page({
       icon: 'success',
       duration: 2000
     })
-  }
+  },
+
 })

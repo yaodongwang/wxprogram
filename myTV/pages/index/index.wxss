@@ -54,17 +54,15 @@
 }
 
 .news_title {
-  font-size: 10pt;
+  font-size: 12pt;
 }
 
 .temp {
-  margin: 5px;
+  
   margin-bottom: 10px;
 }
 
 .temp_img {
-  height: 100px;
-  width: 170px;
   border-radius: 4px;
 }
 
@@ -80,9 +78,8 @@
 
 .toutiao {
   display: flex;
-  justify-content: center;
-  margin-left: 10px;
-  margin-right: 10px;
+  justify-content: space-between;
+  padding: 0px 10px 0px 10px;
   padding-bottom: 8px;
   border-bottom: 1px solid #b2b2b2;
 }
@@ -101,8 +98,9 @@
 
 .hot_list {
   display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 0px 10px;
   flex-wrap: wrap;
-  margin-left: 5px;
   padding-bottom: 8px;
   border-bottom: 1px solid #b2b2b2;
 }
